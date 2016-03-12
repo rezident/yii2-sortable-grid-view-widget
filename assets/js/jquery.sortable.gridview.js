@@ -9,19 +9,20 @@
     $.fn.SortableGridView = function (action) {
         var widget = this;
         var grid = $('tbody', this);
+        var selector = 'tr:not(.not-sortable)';
 
         var initialIndex = [];
-        $('tr:not(.not-sortable)', grid).each(function () {
+        $(selector, grid).each(function () {
             initialIndex.push($(this).data('key'));
         });
 
         grid.sortable({
-            items: 'tr',
+            items: selector,
             axis: 'y',
             update: function () {
                 var items = {};
                 var i = 0;
-                $('tr', grid).each(function () {
+                $(selector, grid).each(function () {
                     var currentKey = $(this).data('key');
                     if (initialIndex[i] != currentKey) {
                         items[currentKey] = initialIndex[i];
