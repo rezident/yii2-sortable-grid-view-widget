@@ -9,13 +9,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 * Either run
 
 ```
-php composer.phar require --prefer-dist "himiklab/yii2-sortable-grid-view-widget" "*"
+php composer.phar require --prefer-dist "rezident/yii2-sortable-grid-view-widget" "*"
 ```
 
 or add
 
 ```json
-"himiklab/yii2-sortable-grid-view-widget" : "*"
+"rezident/yii2-sortable-grid-view-widget" : "*"
 ```
 
 to the `require` section of your application's `composer.json` file.
@@ -25,7 +25,7 @@ to the `require` section of your application's `composer.json` file.
 * Add new behavior in the AR model, for example:
 
 ```php
-use himiklab\sortablegrid\SortableGridBehavior;
+use rezident\sortablegrid\SortableGridBehavior;
 
 public function behaviors()
 {
@@ -41,7 +41,7 @@ public function behaviors()
 * Add action in the controller, for example:
 
 ```php
-use himiklab\sortablegrid\SortableGridAction;
+use rezident\sortablegrid\SortableGridAction;
 
 public function actions()
 {
