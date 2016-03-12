@@ -58,4 +58,4 @@ Usage
 -----
 * Use SortableGridView as standard GridView with `sortableAction` option.
 You can also subscribe to the JS event 'sortableSuccess' generated widget after a successful sorting.
-* Use `not-sortable` class for row disable sorting for this row
+* Use `not-sortable` class for row to disable sorting for this row
