@@ -11,7 +11,7 @@
         var grid = $('tbody', this);
 
         var initialIndex = [];
-        $('tr', grid).each(function () {
+        $('tr:not(.not-sortable)', grid).each(function () {
             initialIndex.push($(this).data('key'));
         });
 
